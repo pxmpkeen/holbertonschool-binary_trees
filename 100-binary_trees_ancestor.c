@@ -22,9 +22,9 @@ binary_tree_t *binary_trees_ancestor(
 		help = node;
 		while (help != NULL)
 		{
-			help = (*help).parent;
 			if (help == temp)
 				return (help);
+			help = (*help).parent;
 		}
 		temp = (*temp).parent;
 	}
